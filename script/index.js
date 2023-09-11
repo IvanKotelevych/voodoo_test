@@ -222,7 +222,7 @@ function renderCart(obj) {
       </div>
 
       <img
-        class="cursor-pointer h-6" src="/images/icons/delete.svg"
+        class="cursor-pointer h-6" src="images/icons/delete.svg"
         alt="delete product"
         onclick="deleteProd(${i})"
       >
