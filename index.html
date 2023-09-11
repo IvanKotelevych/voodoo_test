@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VooDoo</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="font-grotesk bg-[#FCF7E6] relative">
+  <header class="border-b-[1px] border-black mb-6 lg:mb-[100px]">
+    <div class="flex container mx-auto p-6 justify-between items-center md:px-9 lg:px-12 xl:px-[120px] md:py-6 lg:py-9 xl:py-12 lg:items-start">
+      <a href="#" class="flex gap-1 lg:gap-3 xl:relative">
+        <img src="/images/icons/logo.svg" class="h-[23px] lg:h-[45px] xl:absolute xl:translate-x-[-67px]" alt="Logo">
+        <img src="/images/icons/voodoo-test.svg" class="h-[50px] lg:h-[98px]" alt="Logo text">
+      </a>
+  
+      <div class="flex gap-4 items-center lg:gap-12">
+        <img id="cart" src="/images/icons/shopping-cart.svg" class="h-6 cursor-pointer" alt="Shopping cart">
+  
+  
+        <div class="w-max h-max bg-black rounded text-white whitespace-nowrap cursor-pointer">
+          <p class="h-max px-3 py-2 leading-none font-bold text-sm lg:text-xl">Sign-up</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <aside
+    id="shopping-cart"
+    class="fixed top-0 right-0 w-full box-border bg-[#1E1E1E] h-screen z-50 text-[#FCF7E6] md:w-[445px] py-[50px] pl-[37px] pr-11 transition-all duration-300 translate-x-full"
+  >
+    <div class="container w-full">
+      <div class="flex justify-between border-b-[1px] pb-[22px] mb-[52px]">
+        <p class="text-2xl font-bold">Shopping Cart</p>
+
+        <img id="close-cart" class="cursor-pointer" src="/images/icons/close-line.svg" alt="close">
+      </div>
+
+      <div id="cart-list" class="flex flex-col gap-10 max-h-[calc(100vh-299px)] overflow-y-auto">
+        Shopping cart is Empty
+      </div>
+
+      <div class="flex justify-between font-bold border-t-[1px] pt-[35px] mt-[32px]">
+        <p class="uppercase">Total</p>
+
+        <p class="uppercase"><span id="total-price">0</span> KR.</span>
+      </div>
+    </div>
+  </aside>
+
+  <main class="container mx-auto px-6 mb-[204px] md:px-9 lg:px-12 xl:px-[120px] lg:mb-[196px]">
+    <div class="flex justify-between p-6 mb-[50px] bg-black rounded text-white lg:mb-[48px]">
+      <div class="flex gap-[6px] items-center">
+        <img src="/images/icons/alert-circle.svg" alt="ALPHA">
+        <div class="font-bold text-base">ALPHA</div>
+        <div class="font-medium text-sm ml-[18px]">Important info <span class="hidden md:inline">regarding our service</span></div>
+      </div>
+
+      <a href="#" class="">
+        <img src="/images/icons/chevron-down.svg" class="h-6" alt="Important info">
+      </a>
+    </div>
+
+    <div id="products" class="grid grid-cols-1 gap-y-12 gap-x-6 mb-[60px] md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 lg:mb-[70px]"></div>
+
+    <div id="counter" class="flex mx-auto justify-center gap-[10px] font-inter text-lg">
+
+    </div>
+  </main>
+
+  <footer class="border-t-[1px] border-black bg-[#FFF]">
+    <div class="flex container mx-auto p-12 justify-between items-center w-full md:px-12 lg:px-12 xl:px-[120px] md:py-12 lg:py-12 xl:py-[84px]">
+      <div class="flex flex-col gap-12 font-mono w-full md:flex-row md:flex-wrap md:justify-between lg:flex-nowrap lg:gap-6">
+        <div class="mx-auto order-last md:order-first md:mx-0">
+          <a href="#" class="flex justify-center items-center w-[300px] h-[96px]"><img src="/images/icons/logo.svg" class="h-[80px] w-[80px]" alt="Logo"></a>
+        </div>
+
+        <div class="flex flex-col gap-[19px] leading-none w-[300px]">
+          <a href="#" class="hover:underline">FAQ</a>
+          <a href="#" class="hover:underline">RETURNS</a>
+          <a href="#" class="hover:underline">CONTACT</a>
+        </div>
+
+        <div class="flex flex-col gap-[19px] leading-none w-[300px]">
+          <a href="#" class="hover:underline">TERMS & CONDITIONS</a>
+          <a href="#" class="hover:underline">PRIVACY POLICY</a>
+          <a href="#" class="hover:underline">COOKIE POLICY</a>
+          <a href="#" class="hover:underline">COOKIE SETTINGS</a>
+        </div>
+
+        <div class="flex flex-col gap-[19px] leading-none w-[300px]">
+          <a href="#" class="hover:underline">ABOUT VOODOO</a>
+          <a href="#" class="hover:underline">CAREER</a>
+          <a href="#" class="hover:underline">FACEBOOK</a>
+          <a href="#" class="hover:underline">INSTAGRAM</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="script/index.js"></script>
+</body>
+</html>
